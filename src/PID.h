@@ -2,7 +2,14 @@
 #define PID_H
 
 class PID {
+private:
+  bool prev_cte_set = false;
+  double prev_cte;
+  double int_cte;
+
 public:
+  double steer(double cte);
+
   /*
   * Errors
   */

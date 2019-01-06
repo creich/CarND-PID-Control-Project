@@ -9,6 +9,14 @@ set(CMAKE_CXX_FLAGS "${CXX_FLAGS}")
 
 set(sources src/PID.cpp src/main.cpp)
 
+##########################################################################
+
+# my local search paths
+include_directories(_externalDeps/include)
+link_directories(_externalDeps/lib)
+
+##########################################################################
+
 include_directories(/usr/local/include)
 link_directories(/usr/local/lib)
 
